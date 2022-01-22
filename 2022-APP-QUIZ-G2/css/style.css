@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+    font-size: small;
+    
+}
+.btn-Back{
+    margin-top: 20px;
+
+}
+.btn-Submit{
+    margin-top: 20px;
+}
+.btn-group{
+    margin-top: 15%;
+    padding-left: 40%;
+}
+#btn-hide {
+    background: rgb(106, 131, 243);
+    color: #fff;
+    padding: 20px;
+    margin-right: 5rem;
+
+}
+#btn-show {
+    background: rgb(100, 139, 247);
+    color: #fff;
+    padding: 20px;
+}
+.nva{
+    background: blue;
+    height: 20vh;
+}
+
