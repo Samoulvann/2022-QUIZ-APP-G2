@@ -1,33 +1,140 @@
 body{
     font-family: sans-serif;
-    font-size: small;
-    
+    margin: 0;padding: 0;
+    background: #f0efeb;
 }
-.btn-Back{
-    margin-top: 20px;
+#logo{
+    background: #1565c0;
+    padding: 10px;
+    display: flex;
+    position:sticky;
+    top: 0;
+    justify-content: center;
+}
 
-}
-.btn-Submit{
-    margin-top: 20px;
+img{
+  width: 70px;
 }
 .btn-group{
-    margin-top: 15%;
-    padding-left: 40%;
-}
-#btn-hide {
-    background: rgb(106, 131, 243);
-    color: #fff;
-    padding: 20px;
-    margin-right: 5rem;
-
-}
-#btn-show {
-    background: rgb(100, 139, 247);
-    color: #fff;
-    padding: 20px;
-}
-.nva{
-    background: blue;
-    height: 20vh;
+   display: flex;
+   width: 50%;
+   margin: auto;
+   margin-top: 40vh;
+   justify-content: center;
+      
 }
 
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #1565c0;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+.button-6 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #1565c0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button-6:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+
+  .container{
+    /* background:teal; */
+    padding-top: 50px;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .start{
+    text-align: center;
+    border: 1px solid #1565c0;
+    border-top: 10px solid #1565c0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+}
+#Question1,#Question2,#Question3,#Question4,#Addquestion{
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #1565c0;
+    border-left: 5px solid #1565c0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.btn-Back,.btn-Submit{
+  background: #1565c0;
+  color: white;
+  margin-top: 20px;
+}
+.btn-Submit{
+  margin-left: 30px;
+}
