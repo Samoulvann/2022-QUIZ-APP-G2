@@ -130,7 +130,7 @@ p{
   font-weight: 500;
   color: red;
 }
-#Question1,#Question2,#Question3,#Question4,#Addquestion{
+.Question{
   font-size: 25px;
   margin-top: 20px;
   padding: 20px;
@@ -142,7 +142,7 @@ p{
 }
 
 
-/ CSS /
+/* / CSS / */
 .btn-Back{
 background-color: #e1ecf4;
 border-radius: 3px;

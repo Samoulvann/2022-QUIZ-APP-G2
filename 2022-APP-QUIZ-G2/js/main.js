@@ -1,3 +1,6 @@
+
+// Get button 
+
 let image=document.getElementById('logo')
 let button=document.getElementsByClassName('btn-group')
 let buttonStart=document.getElementsByClassName('button-5')
@@ -6,6 +9,11 @@ let container =document.getElementsByClassName('container')
 
 
 
+// Display Question
+function displayQuestion(questions){
+  
+
+}
 
 
 const questions = [
