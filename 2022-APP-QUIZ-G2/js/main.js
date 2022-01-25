@@ -1,112 +1,112 @@
-
-// Get button 
-
-let image=document.getElementById('logo')
-let button=document.getElementsByClassName('btn-group')
-let buttonStart=document.getElementsByClassName('button-5')
-let editbutton=document.getElementsByClassName('button-6')
-let container =document.getElementsByClassName('container')
-
-
-
-// Display Question
+/*
+ Display Question
+ */
 function displayQuestion(questions){
-  
+
+  // loop to get all questions
+
+  for (let question  of questions ){
+    console.log(question);
+
+    // create card for question
+
+    let questionDiv=document.createElement('div');
+    questionDiv.className='question';
+    let par=document.createElement('p');
+    par.textContent=question.question;
+    questionDiv.appendChild(par);
+    listQuestion.appendChild(questionDiv);
+
+    // create form for choice
+
+    let form = document.createElement("form")
+    form.id = "choice";
+
+    // loop to get all choices in a question
+
+    for (let answer of question.choices){
+      let input=document.createElement('input');
+      let labels=document.createElement('label');
+      labels.textContent = answer;
+
+
+      input.type='radio';
+      input.name='answer';
+      form.appendChild(input);
+      form.appendChild(labels);
+    }
+    questionDiv.appendChild(form);
+  }
 
 }
+/*
+add question function
+*/
+let quest = '';
+let answerList=[];
+function addQuestion(event){
+  event.preventDefault()
 
+  // get question from input
 
-const questions = [
-  {
-    question: '1. I ....(hear) a new song on the radio.',
-    answers: [
-      { text: 'A. heard', correct: true },
-      { text: 'B. hade', correct: false },
-      { text: 'C. hote', correct: false },
-      { text: 'D. harding', correct: false }
-    ]
-  },
-  {
-    question: '2.I .....(read)three books last week',
-    answers: [
-      { text: 'A.rade', correct: false },
-      { text: ' B. reading', correct: false },
-      { text: 'C. read', correct: true },
-      { text: 'D. readed', correct: false }
-    ]
-  },
-  {
-    question: '3.They ......(speak) French to the waitress.',
-    answers: [
-      { text: 'A.speak', correct: false },
-      { text: 'B. spoke', correct: true },
-      { text: 'C.speaking ', correct: false },
-      { text: 'D.spoked', correct: false }
-    ]
-  },
-  {
-    question: '4.She ..........(be) a teacher .',
-    answers: [
-      { text: ' A.is', correct: true },
-      { text: 'B. am', correct: false },
-      { text: 'C.are', correct: false},
-      { text: 'D.does', correct: false }
-    ]
-  },
-  {
-    question: '5.We ......(be) hungry.',
-    answers: [
-      { text: ' A.is', correct: false },
-      { text: 'B. am', correct: false },
-      { text: 'C.are', correct: true },
-      { text: 'D.does', correct: false }
-    ]
+  quest=document.querySelector('#question').value;
+  console.log(quest);
+  
 
-  },
-  {
-    question: '6.....(you/come) tonight?',
-    answers: [
-      { text: 'A.Yor are come', correct: false },
-      { text: 'B. Do you come', correct: false },
-      { text: 'C.Are you came', correct: false },
-      { text: 'D.Are you coming', correct: true }
-    ]
-  },
-  {
-    question: '7............(he/eat) rice every day?',
-    answers: [
-      { text: 'A.Does he eat', correct: true },
-      { text: 'B. Did he ate', correct: false },
-      { text: 'C.Is he eat', correct: false },
-      { text: 'D.He is eating', correct: false }
-    ]
-  },
-  {
-    question: '8.Julie .........(sleep) at three o-clock.',
-    answers: [
-      { text: 'A.sleeping', correct: false },
-      { text: 'B. was sleeping', correct: true },
-      { text: 'C.slept', correct: false },
-      { text: 'D.is sleep', correct: false }
-    ]
-  },
-  {
-    question: '9.You ..........(study) at nine o-clock.',
-    answers: [
-      { text: 'A.studing', correct: false },
-      { text: 'B.were studying', correct: true },
-      { text: 'C.was study', correct: false },
-      { text: 'D.studied', correct: false }
-    ]
-  },
-  {
-    question: '10.Is web development fun?',
-    answers: [
-      { text: 'A.will win', correct: true },
-      { text: 'B. won', correct: false },
-      { text: 'C.be won', correct: false },
-      { text: 'D.winn', correct: false }
-    ]
+  // get choices from input
 
+  let choice=document.querySelectorAll('.option input');
+  answerList=[];
+  for(let item of choice){
+    console.log(item);
+    answerList.push(item.value);
   }
+
+  
+
+  // get answer from input
+    let option1=document.querySelector('#option-1').value;
+    console.log(option1);
+    let option2=document.querySelector('#option-2').value;
+    console.log(option2);
+    let option3=document.querySelector('#option-3').value;
+    console.log(option3);
+    let option4=document.querySelector('#option-4').value;
+    console.log(option4);
+    let answer=document.querySelector('#correction').value;
+    console.log(answer);
+
+  // declear a variable as an object
+  let array=[];
+  let optione=document.querySelectorAll('.option');
+  for (let values of optione){
+    array.push(values.value)
+    console.log(values.value);
+  }
+  let dictionaryOfobject={};
+  
+
+  dictionaryOfobject.keyOfquestion=question;
+  
+
+  // put all of them as format in questions variable
+
+
+
+  // push this object to questions variable
+
+
+  // displayQuestion()
+}
+let questions  = [
+  {question:quest, choices: answerList, answer:1 },
 ]
+let listQuestion = document.querySelector(".listQuestion");
+displayQuestion(questions);
+
+let button=document.getElementById('addQuestion');
+button.addEventListener('click', addQuestion);
+
+
+
+

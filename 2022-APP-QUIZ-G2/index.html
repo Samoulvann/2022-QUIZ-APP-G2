@@ -6,113 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2022-APP-QUIZ-G2</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js">defer</script>
 </head>
 <body>
     <!-- logo -->
-    <div id="logo">
+    <!-- <div id="logo">
         <img src="images/pn-logo.png" alt="">
-    </div>
-    
-    <div class="btn-group">
-        <button class="button-5" role="button">START QUIZ</button>
-        <button class="button-6" role="button">EDIT QUIZ</button>
-    </div>
-    
-    <div class="container">
-        <div class="start"> 
-        <h1>Grammar Quiz</h1>
+    </div> -->
+    <section id="edit-quiz">
+        <div class="form">
+            <form action="#">
+                <label for="question">Question:</label>
+                <input type="text" name="question" id="question">
+                <div class="option">
+                    <input type="text" name="option-1" placeholder="Option-1" id="option-1">
+                    <input type="text" name="option-2" placeholder="Option-2" id="option-2">
+                </div>
+                <div class="option">
+                    <input type="text" name="option-3" placeholder="Option-3" id="option-3">
+                    <input type="text" name="option-4" placeholder="Option-4" id="option-4">
+                </div>
+                <label for="correction">Correct Answer:</label>
+                <select name="corretion" id="correction">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button id="addQuestion">Add Question</button>
+            </form>
         </div>
-        <!-- <div class="Question"> -->
-        <!-- <p>1. I ....(hear) a new song on the radio.</p>
-        <input type="radio"> A. heard <br>
-        <input type="radio"> B. hade <br>
-        <input type="radio"> C. hote <br>
-        <input type="radio"> D. harding <br>
+        <div class="listQuestion">
+            
         </div>
-        <div class="Question">
-            <p>2.I .....(read)three books last week.</p>
-            <input type="radio"> A.rade<br>
-            <input type="radio"> B. reading <br>
-            <input type="radio"> C. read <br>
-            <input type="radio"> D. readed <br>
-        </div>
-        <div class="Question">
-            <p>3.They ......(speak) French to the waitress.</p>
-            <input type="radio"> A.speak <br>
-            <input type="radio"> B. spoke<br>
-            <input type="radio"> C.speaking <br>
-            <input type="radio"> D.spoked<br>
-        </div>
-        <div class="Question">
-            <p>4.She ..........(be) a teacher .</p>
-            <input type="radio"> A.is <br>
-            <input type="radio"> B. am<br>
-            <input type="radio"> C.are <br>
-            <input type="radio"> D.does<br>
-        </div>
-        <div class="Question">
-            <p>5.We ......(be) hungry.</p>
-            <input type="radio"> A.is <br>
-            <input type="radio"> B. am<br>
-            <input type="radio"> C.are <br>
-            <input type="radio"> D.does<br>
-        </div>
-        <div class="Question">
-            <p>6.....(you/come) tonight?
-            </p>
-            <input type="radio"> A.Yor are come <br>
-            <input type="radio"> B. Do you come<br>
-            <input type="radio"> C.Are you came <br>
-            <input type="radio"> D.Are you coming<br>
-        </div>
-        <div class="Question">
-            <p>7............(he/eat) rice every day?</p>
-            <input type="radio"> A.Does he eat <br>
-            <input type="radio"> B. Did he ate<br>
-            <input type="radio"> C.Is he eat <br>
-            <input type="radio"> D.He is eating<br>
-        </div>
-        <div class="Question">
-            <p>8.Julie .........(sleep) at three o'clock.</p>
-            <input type="radio"> A.sleeping <br>
-            <input type="radio"> B. was sleeping<br>
-            <input type="radio"> C.slept <br>
-            <input type="radio"> D.is sleep<br>
-        </div>
-        <div class="Question">
-            <p>9.You ..........(study) at nine o'clock.</p>
-            <input type="radio"> A.studing <br>
-            <input type="radio"> B. were studying<br>
-            <input type="radio"> C.was study<br>
-            <input type="radio"> D.studied<br>
-        </div>
-        <div class="Question">
-            <p>10.Joan thinks the Conservatives.......(win) the next election. </p>
-            <input type="radio"> A.will win <br>
-            <input type="radio"> B. won<br>
-            <input type="radio"> C.be won <br>
-            <input type="radio"> D.winn<br>
-        </div> -->
-        <div class="btn-b-s">
-            <button class="btn-Back" role="button">BACK</button>
-            <button class="btn-Submit" role="button">SUBMIT</button>
-        </div>
+    </section>
 
 
-        <div class="start">
-            <h1>EDIT THE QUIZ</h1>
-        </div> 
-        <div id="Addquestion">
-            <input type="radio"> A..................... <br>
-            <input type="radio"> B..................... <br>
-            <input type="radio"> C..................... <br>
-            <input type="radio"> D..................... <br>
-        </div>
-        <div class="btn-b-s">
-            <button class="btn-Back" role="button">BACK</button>
-            <button class="btn-Submit" role="button">ADD</button>
-        </div>
-    </div>
+
+
+    <section id="do-quiz">
+
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>

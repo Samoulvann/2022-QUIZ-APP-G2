@@ -1,223 +1,46 @@
-body{
-  font-family: sans-serif;
-  margin: 0;padding: 0;
-  background: hsl(48, 14%, 93%);
-  
-  
+#edit-quiz{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
-#logo{
-  background: #b3d3ea;
-  /* border-top: 4px solid #03045e;
-  border-bottom: 4px solid #03045e; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 10px;
-  display: flex;
-  position:sticky;
-  top: 0;
-  justify-content: center;
-}
-
-img{
-width: 70px;
-}
-.btn-group{
- display: flex;
- width: 80%;
- margin: auto;
- margin-top: 40vh;
- justify-content: center;
-    
-}
-
-.button-5 {
-align-items: center;
-background-clip: padding-box;
-background-color: #1565c0;
-border: 1px solid transparent;
-border-radius: .25rem;
-box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-box-sizing: border-box;
-color: #fff;
-cursor: pointer;
-display: inline-flex;
-font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-font-size: 16px;
-font-weight: 600;
-justify-content: center;
-line-height: 1.25;
-margin: 0;
-min-height: 3rem;
-padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-position: relative;
-text-decoration: none;
-transition: all 250ms;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-vertical-align: baseline;
-width: auto;
-}
-
-.button-5:active {
-background-color: #c85000;
-box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-transform: translateY(0);
-}
-
-.button-6{
-height: 10vh;
-margin: 20px;
-
-}
-.button-6 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #1565c0;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.button-6:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-.container{
-  /* / background:teal; / */
-  padding-top: 50px;
-  align-items: center;
-  width: 50%;
+.form{
+  width: 40%;
   margin: auto;
 }
-
-.start{
-  background: #b3d3ea;
-  padding: 10px;
-  text-align: center;
-  border-top: 10px solid #03045e;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+input, select{
+  padding: 12px;
+  width: 350px;
+  margin: 10px;
 }
-
-h1{
-  font-size: 40px;
+.option{
+  display: flex;
 }
-
-p{
-  font-size: 30px;
-  font-weight: 500;
-  color: red;
+#question{
+  width: 370px;
 }
-.Question{
-  font-size: 25px;
-  margin-top: 20px;
-  padding: 20px;
-  border-left: 5px solid #1565c0;
-  border-right: 5px solid #1565c0;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- 
+select{
+  width: 400px;
 }
-
-
-/* / CSS / */
-.btn-Back{
-background-color: #e1ecf4;
-border-radius: 3px;
-border: 1px solid #7aa7c7;
-box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-box-sizing: border-box;
-color: #39739d;
-cursor: pointer;
-display: inline-block;
-font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-font-size: 13px;
-font-weight: 400;
-line-height: 1.15385;
-margin: 0;
-outline: none;
-padding: 8px .8em;
-position: relative;
-text-align: center;
-text-decoration: none;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-vertical-align: baseline;
-white-space: nowrap;
+#addQuestion{
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  background: lightblue;
+  border: none;
+  float: right;
 }
-
-.btn-Back:hover,
-.btn-Back:focus {
-background-color: #b3d3ea;
-color: #2c5777;
+.question{
+  width: 70%;
+  background: rgb(250, 250, 250);
+  margin: auto;
+  padding: 12px;
+  margin-top: 10px;
 }
-.btn-Back:active {
-background-color: #a0c7e4;
-box-shadow: none;
-color: #2c5777;
+.listQuestion{
+  margin-top: 50px;
 }
-
-.btn-Submit{
-background-color: #e1ecf4;
-border-radius: 3px;
-border: 1px solid #7aa7c7;
-box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-box-sizing: border-box;
-color: #39739d;
-cursor: pointer;
-display: inline-block;
-font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-font-size: 13px;
-font-weight: 400;
-line-height: 1.15385;
-margin: 0;
-outline: none;
-padding: 8px .8em;
-position: relative;
-text-align: center;
-text-decoration: none;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-vertical-align: baseline;
-white-space: nowrap;
-}
-
-.btn-Submit:hover,
-.btn-Submit:focus {
-background-color: #b3d3ea;
-color: #2c5777;
-}
-.btn-Submit:active {
-background-color: #a0c7e4;
-box-shadow: none;
-color: #2c5777;
-}
-.btn-b-s{
-display: flex;
-justify-content: space-between;
-padding: 20px;
+#choice{
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
