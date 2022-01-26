@@ -22,6 +22,11 @@ img{
   justify-content: center;
   cursor: pointer;
 }
+
+/*
+  disply to show edit and start quiz------------
+*/
+
 .button-A,.button-B{
   width: 15%;
   height: 70px;
@@ -41,3 +46,61 @@ img{
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+/*
+  Edit quiz--------------------------------------
+*/
+
+#edit-quiz{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.form{
+  width: 50%;
+  margin: auto;
+}
+input, select{
+  padding: 12px;
+  width: 350px;
+  margin: 10px;
+}
+.option{
+  display: flex;
+}
+#question{
+  width: 370px;
+}
+select{
+  width: 400px;
+}
+#addQuestion{
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  background: lightblue;
+  border: none;
+  float: right;
+}
+.question{
+  width: 70%;
+  background: rgb(250, 250, 250);
+  margin: auto;
+  padding: 12px;
+  margin-top: 10px;
+}
+#listQuestion{
+  width: 50%;
+  margin: auto;
+}
+#choice{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+ol{
+  list-style: none;
+  display: flex;
+}
+
+
