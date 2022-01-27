@@ -8,15 +8,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!--create button-->
-    <!-- <div class="btn-group">
+    
+    <div id="logo">
+        <img src="/images/pn-logo.png" alt="">
+    </div>
+    <div class="btn-group">
         <button class="button-A" role="button">START QUIZ</button>
         <button class="button-B" role="button">EDIT QUIZ</button>
-    </div> -->
+    </div>
+   
+    
+    <div class="container">
+        <div class="start">
+            <h1>Grammar-QUIZ</h1>
+        </div>
+    </div>
+    <!-- for the teacher  -->
+    <div class="listQuestion"> 
+
+    </div>
     <section id="edit-quiz">
-        <div class="form">
+        <div id="form">
             <form action="#">
+
                 <input type="text" name="question" placeholder="Question" id="question">
                 <div class="option">
                     <input type="text" name="option-1" placeholder="Option-1" id="option-1">
@@ -33,21 +47,19 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
+               
                 <button id="addQuestion">Add Question</button>
             </form>
+           
         </div>
+
         <div id="listQuestion">
         </div>
+        
     </section>
-
-
-
-
     <section id="do-quiz">
 
     </section>
-
-    
     <script src="js/main.js"></script>
 </body>
 </html>
