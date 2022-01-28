@@ -4,62 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2022-APP-QUIZ-G2</title>
+    <title>QUIZ-APP-2022</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div id="logo">
-        <img src="/images/pn-logo.png" alt="">
+    <!-- logo -->
+    <div class="logo">
+        <img src="images/pn-logo.png" alt="">
     </div>
+
+    <!--create button-->
     <div class="btn-group">
         <button class="button-A" role="button">START QUIZ</button>
         <button class="button-B" role="button">EDIT QUIZ</button>
     </div>
-   
     
+    <!--card of page to doing quiz for student-->
     <div class="container">
-        <div class="start">
-            <h1>Grammar-QUIZ</h1>
+        <div class="card1"> 
+            <h1>Grammar Quiz</h1>
         </div>
+        <div class="listQuestion"></div>
+        <button class="btn-submit">Submit</button>
     </div>
-    <!-- for the teacher  -->
-    <div class="listQuestion"> 
-
+    
+    <!--card of page to editting quiz for teacher-->
+    <div class="editQuiz">
+        <div class="card2">
+            <h1>Edit Quiz</h1>
+        </div>
+        <section id="edit-quiz">
+            <div id="form">
+                <form action="#">
+                    <input type="text" name="question" placeholder="Question" id="question">
+                    <div class="option">
+                        <input type="text" name="option-1" placeholder="Option-1" id="option-1">
+                        <input type="text" name="option-2" placeholder="Option-2" id="option-2">
+                    </div>
+                    <div class="option">
+                        <input type="text" name="option-3" placeholder="Option-3" id="option-3">
+                        <input type="text" name="option-4" placeholder="Option-4" id="option-4">
+                    </div>
+                    <label for="correction">Correct Answer:</label>
+                    <select name="corretion" id="correction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    
+                    <button id="addQuestion">Add Question</button>
+                </form>
+            </div>
+        </section>
     </div>
-    <section id="edit-quiz">
-        <div id="form">
-            <form action="#">
-
-                <input type="text" name="question" placeholder="Question" id="question">
-                <div class="option">
-                    <input type="text" name="option-1" placeholder="Option-1" id="option-1">
-                    <input type="text" name="option-2" placeholder="Option-2" id="option-2">
-                </div>
-                <div class="option">
-                    <input type="text" name="option-3" placeholder="Option-3" id="option-3">
-                    <input type="text" name="option-4" placeholder="Option-4" id="option-4">
-                </div>
-                <label for="correction">Correct Answer:</label>
-                <select name="corretion" id="correction">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-               
-                <button id="addQuestion">Add Question</button>
-            </form>
-           
-        </div>
-
-        <div id="listQuestion">
-        </div>
-        
-    </section>
-    <section id="do-quiz">
-
-    </section>
+    
     <script src="js/main.js"></script>
 </body>
 </html>

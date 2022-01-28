@@ -1,8 +1,34 @@
 /*
- Display Question For student quiz---------------------------------
- */
+Button Hide and Show
+*/
+// button start of quiz -------------------------------
+let buttonOfStart = () => {
+    let startQuiz = document.querySelector(".container");
+    startQuiz.style.display = "block";
+    let editQuiz = document.querySelector(".editQuiz");
+    editQuiz.style.display = "none";
+}
 
- function displayQuestion(questions){
+// button edit of quiz ---------------------------------
+let buttonOfEdit = () => {
+    let editQuiz = document.querySelector(".editQuiz");
+    editQuiz.style.display = "block";
+    let startQuiz = document.querySelector(".container");
+    startQuiz.style.display = "none";
+}
+
+// click button to another pages -----------------------
+let startOfQuiz = document.querySelector(".button-A");
+let editOfQuiz = document.querySelector(".button-B");
+
+startOfQuiz.addEventListener("click", buttonOfStart);
+editOfQuiz.addEventListener("click", buttonOfEdit);
+  
+/*
+Display Question
+*/
+
+function displayQuestion(questions){
   // loop to get all questions
   for (let question  of questions ){
   console.log(question);
@@ -30,7 +56,6 @@
     questionDiv.appendChild(form);
   }
 }
-// displayQuestion for student
 let questions  = [
   {question:'1. I ...(hear) a new song on the radio.', choices:  [" hade","heard","hote","harding"],answer:1 },
   {question:'2.I ...(read)three books last week.', choices:  ["rade","reading","read","readed"],answer:2 },
@@ -41,7 +66,7 @@ displayQuestion(questions);
 
 
 /*
-Add question function
+Add question 
 */
 function addQuestion(event){
   event.preventDefault()
@@ -64,7 +89,7 @@ function addQuestion(event){
 };
 
 /*
- Display Question For Teacer edit-------------------------------
+ Display Edit Question -------------------------------
  */
 
 function displayQuestionTeacher(){
@@ -163,6 +188,8 @@ let answerList= [];
 let button=document.getElementById('addQuestion');
 button.addEventListener('click', addQuestion);
 
-
-
-
+  
+  
+  
+  
+  

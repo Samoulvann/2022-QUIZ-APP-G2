@@ -1,32 +1,33 @@
 body{
   font-family: sans-serif;
-  margin: 0;padding: 0;
-  background: #fff;
+  margin: 0;
+  padding: 0;
+  background: hsl(48, 14%, 93%);
 }
-#logo{
-  background: #00b4d8;
+.logo{
+  background: #b3d3ea;
   padding: 10px;
   display: flex;
   position:sticky;
   top: 0;
   justify-content: center;
 }
-
 img{
-width: 70px;
+  width: 7%;
 }
 .btn-group{
   display: flex;
   margin: auto;
   margin-top: 25vh;
   justify-content: center;
-  cursor: pointer;
 }
 .button-A,.button-B{
   width: 15%;
   height: 70px;
   border: none;
   background-color: #1565c0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
   color: white;
   margin: 15px;
   cursor: pointer;
@@ -42,116 +43,62 @@ width: 70px;
   transform: translateY(0);
 }
 .container{
-  padding-top: 50px;
+  padding-top: 100px;
   align-items: center;
-  width: 100%;
-  margin: auto;
-}
-
-.start{
   width: 50%;
   margin: auto;
+  display: none;
+}
+.card1{
+  background: #b3d3ea;
+  padding: 10px;
   text-align: center;
-  padding: 12px;
-  border-top: 10px solid #00b4d8;
+  border-top: 10px solid #03045e;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
 h1{
   font-size: 40px;
 }
-
-p{
-  font-size: 15px;
-  font-weight: 500;
-  color: rgb(10, 10, 10);
+.listQuestion{
+  margin: auto;
+}
+.btn-submit{
+  margin-left: 86%;
+  margin-top: 15px;
+  font-size: 1.5rem;
+  background: rgb(62, 180, 219);
+  border-radius: 5px;
+  border: none;
 }
 
-#edit-quiz{
+/*
+// Display for editting quiz ---------------------------------------
+*/
+.editQuiz{
+  padding-top: 100px;
+  align-items: center;
   width: 50%;
   margin: auto;
-  
-}
-/* .form{
-  width: 40%;
-  margin: auto;
-  padding-right: 399px;
-} */
-input, select{
-  padding: 12px;
-  width: 350px;
-  margin: 10px;
-}
-/* .option{
-  display: flex;
-  width: 990px;
-  
-
-
-} */
-#question{
-  width: 870px;
-  margin-top: 10px;
+  display: none;
 }
 
-#addQuestion{
-  padding: 8px;
-  width: 100px;
-  border-radius: 8px;
-  outline: none;
-  background: lightblue;
-  border: none;
-  margin-left: 157%;
-  
-}
-/* .question{
-  width: 70%;
-  background: rgb(250, 250, 250);
-  margin: auto;
-  padding: 12px;
-  margin-top: 10px;
-} */
-
-
-/*
-  disply to show edit and start quiz------------
-*/
-
-.button-A,.button-B{
-  width: 15%;
-  height: 70px;
-  border: none;
-  background-color: #1565c0;
-  color: white;
-  margin: 15px;
-  cursor: pointer;
-}
-.button-A:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-.button-B:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-/*
-  Edit quiz--------------------------------------
-*/
-
-#edit-quiz{
-  margin: auto;
+.card2{
+  background: #b3d3ea;
   padding: 20px;
+  text-align: center;
+  border-top: 10px solid #1565c0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#edit-quiz{
+  margin-top: 15px;
 }
 #form{
-  /* width: 50%; */
   margin: auto;
   text-align: center;
   border: 1px solid #1565c0;
-  border-top: 5px solid #1565c0;
+  border-top: 10px solid #1565c0;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -160,15 +107,12 @@ input, select{
   width: 350px;
   margin: 10px;
 }
-
 #question{
   width: 370px;
 }
 select{
   width: 400px;
 }
-
-
 #addQuestion{
   padding: 10px;
   border-radius: 5px;
@@ -179,22 +123,15 @@ select{
   border: none;
   float: right;
 }
-
-
 .question{
-  width: 50%;
-  border-left: 3px solid #00b4d8;
-  border-right: 3px solid #00b4d8;
+  width: 70%;
+  background: rgb(250, 250, 250);
   margin: auto;
   padding: 12px;
   margin-top: 10px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
 #choice{
   display: flex;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -203,21 +140,20 @@ ol{
   display: flex;
   width: 15%;
 }
-
 .section2{
   width: 50%;
   margin: auto;
+  margin-top: 100px;
 }
 .formOflist{
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 15px;
   text-align: center;
-  /* border: 1px solid #1565c0; */
-  border-left: 3px solid #00b4d8;
+  border: 1px solid #1565c0;
+  border-top: 10px solid #1565c0;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  
 }
-
 .showAnser{
   display: flex;
 }
@@ -226,9 +162,7 @@ ol{
   font-weight: 700;
   display: flex;
   padding: 12px;
-  
-  
 }
-.listQuestion{
-  margin: auto;
-}
+
+
+
