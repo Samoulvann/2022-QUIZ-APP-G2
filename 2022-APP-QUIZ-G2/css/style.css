@@ -2,34 +2,36 @@ body{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: hsl(48, 14%, 93%);
+  background: #001233;
+  color: #fff;
 }
 .logo{
-  background: #b3d3ea;
-  padding: 10px;
-  display: flex;
+  background: #001233;
   position:sticky;
   top: 0;
-  justify-content: center;
+}
+#Logo{
+  width:6%;
+  cursor: pointer;
+  margin-top: -83px;
+  margin-right:12px;
+  float: right;
 }
 img{
-  width: 7%;
+  width: 15px;
 }
+  
 .btn-group{
-  display: flex;
-  margin: auto;
-  margin-top: 25vh;
-  justify-content: center;
+  padding: 15px;
 }
 .button-A,.button-B{
-  width: 15%;
-  height: 70px;
+  width: 10%;
   border: none;
-  background-color: #1565c0;
+  background-color: #61a5c2;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 5px;
   color: white;
-  margin: 15px;
+  margin: 5px;
   cursor: pointer;
 }
 .button-A:active {
@@ -43,52 +45,70 @@ img{
   transform: translateY(0);
 }
 .container{
-  padding-top: 100px;
+  width: 77%;
+  padding-top: 50px;
   align-items: center;
-  width: 50%;
   margin: auto;
   display: none;
 }
 .card1{
-  background: #b3d3ea;
-  padding: 10px;
   text-align: center;
-  border-top: 10px solid #03045e;
-  border-radius: 5px;
+  border: 1px solid #fff;
+  border-top: 6px solid #61a5c2;
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 h1{
-  font-size: 40px;
+  font-size: 55px;
 }
+
 .listQuestion{
-  margin: auto;
+  text-align: center;
 }
 .btn-submit{
-  margin-left: 86%;
-  margin-top: 15px;
-  font-size: 1.5rem;
-  background: rgb(62, 180, 219);
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 5px;
+  outline: none;
+  color: #fff;
+  background:#61a5c2;
   border: none;
+  float: right;
+}
+.question{
+  border-radius: 15px;
+  border: 1px solid #fff;
+  border-left: 5px solid #61a5c2;
+  border-right: 5px solid #61a5c2;
+  margin-top: 12px;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#question{
+  color: #fff;
+  background: #001233;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
 }
 
 /*
 // Display for editting quiz ---------------------------------------
 */
 .editQuiz{
-  padding-top: 100px;
+  width: 75%;
+  padding-top: 50px;
   align-items: center;
-  width: 50%;
   margin: auto;
   display: none;
 }
-
 .card2{
-  background: #b3d3ea;
   padding: 20px;
   text-align: center;
-  border-top: 10px solid #1565c0;
-  border-radius: 5px;
+  border: 1px solid #fff;
+  border-top: 5px solid #61a5c2;
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #edit-quiz{
@@ -96,73 +116,99 @@ h1{
 }
 #form{
   margin: auto;
+  margin-bottom: 12px;
   text-align: center;
-  border: 1px solid #1565c0;
-  border-top: 10px solid #1565c0;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid #fff;
 }
-input, select{
+input{
   padding: 12px;
   width: 350px;
   margin: 10px;
 }
-#question{
-  width: 370px;
-}
+/* #option-1{
+  border-bottom: 1px solid red;
+} */
+
 select{
-  width: 400px;
+  width: 10%;
+  color: #fff;
+  background: #001233;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
 }
 #addQuestion{
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 12px;
-  outline: none;
-  background: rgb(62, 180, 219);
+  padding: 15px;
+  border-radius: 3px;
   border: none;
-  float: right;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  outline: none;
+  color: #fff;
+  float:right;
+  background: #61a5c2;
 }
-.question{
-  width: 70%;
-  background: rgb(250, 250, 250);
-  margin: auto;
-  padding: 12px;
-  margin-top: 10px;
+
+label,#nameQuiz{
+  margin-bottom: 12px;
+  padding: 32px 60px;
 }
-#choice{
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+
 ol{
   list-style: none;
-  display: flex;
-  width: 15%;
-}
-.section2{
   width: 50%;
+  float: left;
+}
+li{
+  margin-top: 12px;
+}
+
+input[type='radio'] {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+input[type='text'] {
+  height: 5vh;
+  width: 70%;
+}
+
+.section2{
+  width: 81%;
   margin: auto;
-  margin-top: 100px;
+  margin-top:12px;
+  margin-bottom:12px;
 }
 .formOflist{
-  width: 100%;
   margin-top: 15px;
-  text-align: center;
-  border: 1px solid #1565c0;
-  border-top: 10px solid #1565c0;
+  width: 100%;
+  border: 1px solid #fff;
+  border-left: 3px solid #61a5c2;
+  border-right: 3px solid #61a5c2;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .showAnser{
-  display: flex;
+ display: flex;
 }
-.showQuestion{
-  margin-top:20px;
-  font-weight: 700;
+.showQuestion,p{
+  font-size: 24px;
+  font-weight: 500;
   display: flex;
   padding: 12px;
 }
+#containQuestion{
+  padding: 30px;
+}
 
 
-
+#option-1,#option-2,#option-3,#option-4{
+  background: #001233;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid#fff;
+}

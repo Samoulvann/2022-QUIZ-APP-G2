@@ -10,33 +10,33 @@
 <body>
     <!-- logo -->
     <div class="logo">
-        <img src="images/pn-logo.png" alt="">
+        <div class="btn-group">
+            <button class="button-A" role="button"><h3>START</h3></button>
+            <button class="button-B" role="button"><h3>EDIT</h3></button>
+        </div>
+        <img id="Logo" src="images/pn-logo.png" alt="">
     </div>
-
     <!--create button-->
-    <div class="btn-group">
-        <button class="button-A" role="button">START QUIZ</button>
-        <button class="button-B" role="button">EDIT QUIZ</button>
-    </div>
-    
     <!--card of page to doing quiz for student-->
     <div class="container">
         <div class="card1"> 
             <h1>Grammar Quiz</h1>
+            <div class="score">
+                <p>score:<span id="num-score">0</span>/5</p>
+            </div>
         </div>
         <div class="listQuestion"></div>
-        <button class="btn-submit">Submit</button>
+        <button class="btn-submit">SUBMIT</button>
     </div>
-    
     <!--card of page to editting quiz for teacher-->
     <div class="editQuiz">
         <div class="card2">
-            <h1>Edit Quiz</h1>
+            <h1>Edit The Quiz</h1>
         </div>
         <section id="edit-quiz">
             <div id="form">
                 <form action="#">
-                    <input type="text" name="question" placeholder="Question" id="question">
+                    <input type="text" name="question" placeholder="Please enter your question hear..." id="question">
                     <div class="option">
                         <input type="text" name="option-1" placeholder="Option-1" id="option-1">
                         <input type="text" name="option-2" placeholder="Option-2" id="option-2">
@@ -45,20 +45,19 @@
                         <input type="text" name="option-3" placeholder="Option-3" id="option-3">
                         <input type="text" name="option-4" placeholder="Option-4" id="option-4">
                     </div>
-                    <label for="correction">Correct Answer:</label>
+                    <!-- <label class="correcTion">Correct Answer:</label> -->
                     <select name="corretion" id="correction">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                     </select>
-                    
-                    <button id="addQuestion">Add Question</button>
                 </form>
+                <button id="addQuestion">ADD</button>
             </div>
         </section>
     </div>
-    
+    <div id="display"></div>
     <script src="js/main.js"></script>
 </body>
 </html>
